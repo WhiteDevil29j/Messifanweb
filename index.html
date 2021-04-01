@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <i class="fa fa-eercast" onclick="showMenu()"></i>
+                <div class="navlinks" id="NavLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="bio.html">BIOGRAPHY</a></li>
+                        <li><a href="ach.html">RESULTS</a></li>
+                        <li><a href="stat.html">STATS</a></li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
+            </nav>
+
+            <div class="textbox">
+                <h1>LIONEL</h1>
+                <img src="https://static.messi.com/wp-content/uploads/2019/10/messi-lletres.png" >
+            </div>
+        </section>
+
+<!------Javascript for Toggle Menu------->
+
+        <script>
+            var NavLinks = document.getElementById("NavLinks")
+            function showMenu(){
+                NavLinks.style.left = "0"
+            }
+
+            function hideMenu(){
+                NavLinks.style.left = "-200px"
+            }
+        </script>
+
+<!----Photos--->
+
+        <section class="section2">
+            <div class="photo">
+                <hr>
+                <h1>PHOTOS</h1>
+                <hr>
+    
+                <div class="row">
+                    <div class="photocol">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-19-ENTRENO-57.jpg">
+
+                        <div class="layer">
+                            <h3>TRAINING SESSION 19-3-2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="photocol">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-02-24-BARCELONA-ELCHE-70.jpg">
+
+                        <div class="layer">
+                            <h3>BARCELONA V ELCHE</h3>
+                        </div>
+                    </div>
+
+                    <div class="photocol">
+                        <img src="https://messi.com/wp-content/uploads/2020/11/2020-11-03-ENTRENO-18.jpg?v=1604416254">
+
+                        <div class="layer">
+                            <h3>TRAINING SESSION 3-11-2020</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow middle">
+                <h1>Image Slider</h1>
+                <div class="slides">
+
+                    <input type="radio" name="r" id="r1" checked> 
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <input type="radio" name="r" id="r6">
+
+                    <div class="slide s1">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-21-R.-SOCIEDAD-BARCELONA-50.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-06-OSASUNA-BARCELONA-51.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-09-ENTRENO-07.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-02-27-SEVILLA-BARCELONA-39.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-03-15-BARCELONA-HUESCA-90.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-02-03-VIAJE-GRANADA-86.jpg">
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r1" class="baar">1</label>
+                    <label for="r2" class="baar">2</label>
+                    <label for="r3" class="baar">3</label>
+                    <label for="r4" class="baar">4</label>
+                    <label for="r5" class="baar">5</label>
+                    <label for="r6" class="baar">6</label>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>

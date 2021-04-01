@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('https://wallpaperaccess.com/full/1589108.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 50px;
+}
+
+nav img:hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: left;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.4s;
+    padding: 5px 5px;
+    transition: 0.4s linear;
+    position: relative;
+    padding: 10px;
+}
+
+.navlinks ul li a::before, .navlinks ul li a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.4s linear;
+}
+
+.navlinks ul li a:hover{
+    transform: scale(0.8);
+}
+
+.navlinks ul li a:hover::before{
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    transform: skew(20deg);
+}
+
+.navlinks ul li a:hover::after{
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: skew(-20deg);
+}
+
+
+.quote{
+    color:lightblue;
+    text-shadow: .4rem .1rem .2rem black;
+    position:absolute;
+    top:50%;
+    transform: translate(0%,40%);
+    font-size:1.5rem;
+    padding:.5rem 1.5rem;
+    width:25rem;
+}
+
+.quote h3{
+    font-size:2rem;
+    float:right;
+}
+
+span{
+    color:aqua;
+    font-size:2.5rem;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .quote{
+        font-size: .8em;
+        position: absolute;
+        top: 60%;
+        width: 50%;
+    }
+
+    .quote h3{
+        font-size: 2em;
+    }
+
+    span{
+        font-size: 1.2em;
+    }
+
+    .navlinks ul li{
+        display: block;
+    }
+
+    .navlinks{
+        position: absolute;
+        background: linear-gradient(to bottom,rgba(9,11,44,.9) 45%,rgba(9,11,44,0) 100%);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .navlinks ul li a{
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav .fa:hover{
+        transform: scale(1.2, 1.2);
+        transition: 1s;
+    }
+
+    .navlinks ul{
+        padding: 20px;
+    }
+}
+
+/*------bio------*/
+
+.childhood{
+    padding-top: 10px;
+    height: 34vw;
+    width: 95%;
+    margin: auto;
+}
+
+#bio{
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('https://ak.picdn.net/shutterstock/videos/19688740/thumb/8.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    height: 3px;
+    background-color: gray;
+    border:none;
+}
+
+.top{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(187, 182, 182, 0.7);
+    border-radius: 50%;
+    position: fixed;
+    left: 92%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    z-index: 1;
+    bottom: 0;
+}
+
+.top .fa{
+    display: flex;
+    line-height: 60px;
+    justify-content: center;
+}
+.top a{
+    text-decoration: none;
+}
+
+.lilmessi{
+    width: 45%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text{
+    width: 55%;
+    color: white;
+    float: right;
+    margin-top: 10px;
+}
+
+.text h1{
+    font-size: 1.5rem;
+    color: aqua;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+}
+
+.text p{
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+
+.barcelona{
+    width: 95%;
+    margin: auto;
+    height: 40vw;
+}
+
+.barmessi{
+    width: 45%;
+    height: 480px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.text1{
+    width: 55%;
+    color: white;
+    float: left;
+    margin-top: 10px;
+}
+
+.text1 h1{
+    font-size: 1.5rem;
+    color: aqua;
+    letter-spacing: 2px;
+    padding-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+}
+
+.text1 p{
+    font-size: 1.1rem;
+    padding-right: 20px;
+}
+
+.debmessi{
+    width: 45%;
+    height: 500px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.debut{
+    width: 95%;
+    margin: auto;
+    height: 40vw;
+}
+
+.natmessi{
+    width: 45%;
+    height: 500px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.argent{
+    width: 95%;
+    margin: auto;
+    height: 40vw;
+    padding-top: 50px;
+}
+.sign{
+    position: relative;
+    margin-top: 100px;
+    left: 200px;
+}
+
+/*-------TIMELINE------*/
+#tim{
+    background: #101010;
+}
+
+
+.timeline ul {
+    list-style-type:none;
+    padding: 50px 0;
+}
+  
+.timeline ul li{
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+    color: white;
+}
+ 
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #24292d;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.timeline ul li div h2{
+    color:aqua;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+} 
+
+.timeline ul li div p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+  
+.timeline ul li:nth-child(even) div {
+    left: 45px;
+    transform: translate3d(200px, 0, 0);
+    border-radius: 0px 20px 20px 20px;
+}
+  
+.timeline ul li:nth-child(odd) div {
+    left: -439px;
+    transform: translate3d(-200px, 0, 0);
+    border-radius: 20px 0px 20px 20px;
+}
+  
+time{
+    color: gold;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+  
+.timeline ul li div{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+  
+.timeline ul li.in-view div{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+.timeline ul li:nth-child(odd) div:hover{
+    transform: scale(1.05,1.05);
+    transition: 1s;
+}
+
+.timeline ul li:nth-child(even) div:hover{
+    transform: scale(1.05,1.05);
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .lilmessi, .debmessi, .barmessi, .natmessi{
+        display: none;
+    }
+
+    .sign{
+        width: 200px;
+        left: 100px;
+        top: -20px;
+    }
+
+    .childhood{
+        height: 140vw;
+        width: 100%;
+        margin: auto;
+    }
+
+    .barcelona{
+        height: 190vw;
+        width: 90%;
+        margin: auto;
+    }
+
+    .debut{
+        height: 190vw;
+        width: 98%;
+        margin: auto;
+    }
+
+    .argent{
+        height: 150vw;
+        width: 88%;
+        margin: auto;
+    }
+
+    .text{
+        width: 100%;
+        float: none;
+        padding-right: 0;
+    }
+
+    .text h1{
+        font-size: 20px;
+        padding-right: 0;
+    }
+
+    .text p{
+        font-size: 15px;
+        padding-right: 0;
+    }
+
+    .text1{
+        width: 100%;
+        float: none;
+        padding-right: 0;
+    }
+
+    .text1 h1{
+        font-size: 20px;
+        padding-right: 0;
+    }
+
+    .text1 p{
+        font-size: 15px;
+        padding-right: 0;
+    }
+}
+
+
+@media(max-width: 700px){
+    .timeline ul {
+        list-style-type:none;
+        padding: 50px 0;
+    }
+      
+    .timeline ul li{
+        position: relative;
+        width: 6px;
+        left: -150px;
+    
+        background: #fff;
+        color: white;
+    }
+     
+    .timeline ul li div {
+        position: relative;
+        bottom: 0;
+        width: 200px;
+        padding: 15px;
+        background: #24292d;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .timeline ul li div h2{
+        color:aqua;
+        font-size: 1rem;
+        padding-bottom: 10px;
+    } 
+    
+    .timeline ul li div p{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+      
+    .timeline ul li:nth-child(even) div {
+        border-radius: 0px 20px 20px 20px;
+    }
+      
+    .timeline ul li:nth-child(odd) div {
+        border-radius: 0px 20px 20px 20px;
+        left: 50px;
+    }
+      
+    time{
+        color: gold;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: .8rem;
+    }
+      
+    .timeline ul li div{
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    }
+    
+    .timeline ul li:nth-child(odd) div:hover{
+        transform: scale(1.05,1.05);
+        transition: 1s;
+    }
+    
+    .timeline ul li:nth-child(even) div:hover{
+        transform: scale(1.05,1.05);
+        transition: 1s;
+    }
+}
